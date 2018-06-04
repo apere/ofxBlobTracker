@@ -60,7 +60,8 @@ public:
             float minDistance = 10000;
             
             for(unsigned int i = 0; i < pts.size(); i++){
-                float dist = centroid.distance( pts[i] );
+                //float dist = centroid.distance( pts[i] );
+                float dist = distance(centroid,pts[i]);
                 
                 if (dist > maxDistance)
                     maxDistance = dist;
